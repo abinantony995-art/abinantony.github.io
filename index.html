@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abin Antony | Manufacturing Engineer</title>
+    <style>
+        /* --- CSS VARIABLES (Easy to change colors here) --- */
+        :root {
+            --primary: #0f172a; /* Dark Navy */
+            --secondary: #64748b; /* Slate Grey */
+            --accent: #2563eb; /* Royal Blue */
+            --bg: #ffffff;
+            --light-bg: #f8fafc;
+            --text: #334155;
+        }
+
+        /* --- RESET & TYPOGRAPHY --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section { padding: 80px 0; }
+        
+        /* --- HEADER / HERO --- */
+        header {
+            padding: 100px 0 60px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        /* --- ABOUT --- */
+        .about-text {
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        /* --- EXPERIENCE GRID --- */
+        .job-card {
+            margin-bottom: 50px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .company {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .role {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+        .achievements li {
+            margin-bottom: 10px;
+            list-style-position: inside;
+            color: var(--text);
+        }
+        .highlight {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* --- SKILLS --- */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill-tag {
+            background-color: var(--light-bg);
+            border: 1px solid #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p { opacity: 0.8; font-size: 0.9rem; }
+
+        /* --- MOBILE --- */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Abin Antony</h1>
+            <p class="subtitle">Manufacturing Engineer | Operational Excellence | Industry 4.0</p>
+            <div class="contact-info">
+                <a href="mailto:abinantony995@gmail.com">abinantony995@gmail.com</a>
+                <a href="tel:+966557479312">+966 55 747 9312</a>
+                <span>Riyadh, KSA</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <p class="about-text">
+                Strategic manufacturing leader with 8+ years of experience driving growth in EMS, Aerospace, and Furniture manufacturing. 
+                I specialize in pioneering Operational Excellence and Industry 4.0 innovation, leveraging data analytics to streamline processes 
+                and foster a culture of continuous improvement.
+            </p>
+        </div>
+    </section>
+
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; max-width: 900px; margin: 0 auto;">
+
+    <section id="experience">
+        <div class="container">
+            <h2 style="margin-bottom: 40px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Professional Experience</h2>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <span class="company">Steelcase Jeraisy Ltd</span>
+                    <span class="role">Manufacturing Engineer | Riyadh, Saudi Arabia</span>
+                </div>
+                <ul class="achievements">
+                    <li>Achieved <span class="highlight">$120K in cost savings</span> and 5% COGS material cost reduction through process improvement projects.</li>
+                    <li>Boosted assembly productivity by 15% and optimized floor space by 15% via workflow redesigns and automation.</li>
+                    <li>Coordinated a powder-paint transfer efficiency project delivering <span class="highlight">$100K in annual cost savings</span>.</li>
+                    <li>Ensured capital discipline by managing the full Capex cycle for production equipment.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <span class="company">Tata Advanced Systems Ltd</span>
+                    <span class="role">Industrial Engineer | Bengaluru, India</span>
+                </div>
+                <ul class="achievements">
+                    <li>Led 5S audits and productivity initiatives, increasing overall efficiency by 7%.</li>
+                    <li>Executed Lean improvement projects, reducing non-value-added processes in production.</li>
+                    <li>Designed ergonomic workstations, improving worker comfort and safety.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <span class="company">SFO Technologies</span>
+                    <span class="role">Industrial Engineer | Kerala, India</span>
+                </div>
+                <ul class="achievements">
+                    <li>Reduced setup times for SMT machinery by <span class="highlight">40% using SMED analysis</span> across 11 machine lines.</li>
+                    <li>Optimized production processes to save 25% of production floor area.</li>
+                    <li>Developed factory layouts for high-volume plants (80k sq. ft) incorporating 10 SMT lines.</li>
+                    <li>Achieved a 91% efficiency rate in manual operations through line balancing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Data-Driven Decision Making</div>
+                <div class="skill-tag">Design Thinking</div>
+                <div class="skill-tag">Change Leadership</div>
+                <div class="skill-tag">Project Management</div>
+                <div class="skill-tag">Lean Manufacturing</div>
+                <div class="skill-tag">Cost Reduction</div>
+                <div class="skill-tag">Industry 4.0</div>
+                <div class="skill-tag">Data Analytics (Google/Coursera)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Education</h2>
+            <div style="margin-bottom: 20px;">
+                <strong style="display:block; font-size: 1.1rem;">Bachelor's Degree</strong>
+                <span style="color: var(--secondary);">GECT, Calicut University (2013-2017)</span>
+            </div>
+             <div>
+                <strong style="display:block; font-size: 1.1rem;">Data Analytics Certification</strong>
+                <span style="color: var(--secondary);">Google, Coursera (2024-2025)</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abin Antony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
